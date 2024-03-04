@@ -21,11 +21,11 @@ def message_callback(self, message_name, message):
 
 def connect_to_drone():
     # MAVProxy serial connection string
-    connection_string = '/dev/serial0, baud=921600"'  # Modify this according to your setup
-
+    connection_string = '/dev/serial0'  # Modify this according to your setup
+    baud_rate = 921600
     try:
         print("Connecting to the drone...")
-        vehicle = dronekit.connect(connection_string, wait_ready=True)
+        vehicle = dronekit.connect(connection_string, baud=baud_rate, wait_ready=True)
         return vehicle
     except Exception as e:
         print(f"Connection failed: {e}")
