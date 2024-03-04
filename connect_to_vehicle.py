@@ -21,7 +21,7 @@ def message_callback(self, message_name, message):
 
 def connect_to_drone():
     # MAVProxy serial connection string
-    connection_string = '/dev/serial10'  # Modify this according to your setup
+    connection_string = '/dev/serial0'  # Modify this according to your setup
 
     try:
         print("Connecting to the drone...")
