@@ -1,11 +1,10 @@
 import time
 import sys
-from connect_to_vehicle import vehicle
+from serial_listener import listener
 try:
     while True:
+
         time.sleep(0.1)
 
 except KeyboardInterrupt:
-    print("Closing the vehicle...")
-    vehicle.close()
-    print("Closed the vehicle.")
+    listener.stop()
