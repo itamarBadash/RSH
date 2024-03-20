@@ -1,4 +1,5 @@
 # sensor_handling.py
+import logging
 import sys
 
 if sys.version_info.major == 3 and sys.version_info.minor >= 10:
@@ -7,56 +8,68 @@ if sys.version_info.major == 3 and sys.version_info.minor >= 10:
     setattr(collections, "MutableMapping", MutableMapping)
 from dronekit import Vehicle
 
+logs_dir = '/mnt/itamarusb/RSH/logs'
+
+# Setup basic logging
+logger = logging.getLogger('sensor_handling')
+handler = logging.FileHandler(f'{logs_dir}/sensor_handling.log')
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+handler.setFormatter(formatter)
+logger.setLevel(logging.INFO)
+logger.addHandler(handler)
+
+
 class SensorHandler:
     def __init__(self, vehicle):
-        """
-        Initializes the SensorHandler with a vehicle object.
-        """
         self.vehicle = vehicle
 
     def get_location(self):
-        """
-        Returns the current location of the drone.
-        """
-        return {
-            'latitude': self.vehicle.location.global_frame.lat,
-            'longitude': self.vehicle.location.global_frame.lon
-        }
+        try:
+            return {
+                'latitude': self.vehicle.location.global_frame.lat,
+                'longitude': self.vehicle.location.global_frame.lon
+            }
+        except Exception as e:
+            logger.error("Failed to get location: %s", e)
+            return None
 
     def get_altitude(self):
-        """
-        Returns the current altitude of the drone.
-        """
-        return self.vehicle.location.global_relative_frame.alt
+        try:
+            return self.vehicle.location.global_relative_frame.alt
+        except Exception as e:
+            logger.error("Failed to get altitude: %s", e)
+            return None
 
     def get_battery_status(self):
-        """
-        Returns the current battery status.
-        """
-        return self.vehicle.battery
+        try:
+            return self.vehicle.battery
+        except Exception as e:
+            logger.error("Failed to get battery status: %s", e)
+            return None
 
     def get_velocity(self):
-        """
-        Returns the current velocity of the drone.
-        """
-        return self.vehicle.velocity
+        try:
+            return self.vehicle.velocity
+        except Exception as e:
+            logger.error("Failed to get velocity: %s", e)
+            return None
 
     def get_heading(self):
-        """
-        Returns the current heading of the drone.
-        """
-        return self.vehicle.heading
+        try:
+            return self.vehicle.heading
+        except Exception as e:
+            logger.error("Failed to get heading: %s", e)
+            return None
 
     def collect_all_data(self):
-        """
-        Collects and returns all relevant sensor data in a dictionary.
-        """
-        return {
-            'location': self.get_location(),
-            'altitude': self.get_altitude(),
-            'battery_status': self.get_battery_status(),
-            'velocity': self.get_velocity(),
-            'heading': self.get_heading()
-        }
-
-# Example usage
+        try:
+            return {
+                'location': self.get_location(),
+                'altitude': self.get_altitude(),
+                'battery_status': self.get_battery_status(),
+                'velocity': self.get_velocity(),
+                'heading': self.get_heading()
+            }
+        except Exception as e:
+            logger.error("Failed to collect sensor data: %s", e)
+            return {}

@@ -1,3 +1,4 @@
+import logging
 import serial
 import time
 import re
@@ -11,98 +12,98 @@ if sys.version_info.major == 3 and sys.version_info.minor >= 10:
     setattr(collections, "MutableMapping", MutableMapping)
 
 from dronekit import connect
-from mavlink_comm import MAVLinkComm
 from hardware_interface import HardwareInterface
 from telemetry_service import TelemetryService
-from pwm_control import PWMControl
 from sensor_handling import SensorHandler
 
+# Setup basic logging
+logs_dir = '/mnt/itamarusb/RSH/logs'
 
+# Setup basic logging
+logger = logging.getLogger('drone_handler')
+handler = logging.FileHandler(f'{logs_dir}/drone_handler.log')
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+handler.setFormatter(formatter)
+logger.setLevel(logging.INFO)
+logger.addHandler(handler)
 # Connection parameters
 vehicle_connection_string = '/dev/serial0'
 vehicle_baud_rate = 921600
 ground_station_serial_port = '/dev/ttyUSB0'
 ground_station_baud_rate = 57600
+
 def wait_for_heartbeat(connection):
-    print("Waiting for heartbeat from vehicle")
+    logger.info("Waiting for heartbeat from vehicle")
     connection.wait_heartbeat()
-    print("Heartbeat from vehicle received")
+    logger.info("Heartbeat from vehicle received")
+
 def connect_via_pymavlink(connection_string):
-    """
-    Establishes a connection to the drone using pymavlink.
-
-    Parameters:
-    - connection_string: String representing the connection path (e.g., serial port, UDP endpoint).
-    - baud: Baud rate for serial connections. Ignored for UDP connections.
-    - source_system: Source system ID for this connection, useful in multi-vehicle setups or advanced configurations.
-
-    Returns:
-    - mavlink_connection: A MAVLink connection object.
-    """
-    print(f"Connecting to drone via {connection_string} with baud rate {vehicle_baud_rate}")
+    logger.info(f"Connecting to drone via {connection_string} with baud rate {vehicle_baud_rate}")
     mavlink_connection = mavutil.mavlink_connection(
         device=connection_string,
         baud=vehicle_baud_rate
     )
-
+    return mavlink_connection
 
 def process_command(command, hardware_interface):
-    """
-    Process incoming command from the ground station and execute it.
-    """
-    match = re.match(r"Channel (\d+): PWM (\d+)", command)
-    if match:
-        channel, pwm_value = map(int, match.groups())
-        # Ensure pwm_control is correctly using a method to send PWM commands
-        success = hardware_interface.set_servo_pwm(channel, pwm_value)
-        if success:
-            print(f"Set channel {channel} to PWM {pwm_value}")
-            return "ACK\n"
+    try:
+        match = re.match(r"Channel (\d+): PWM (\d+)", command)
+        if match:
+            channel, pwm_value = map(int, match.groups())
+            success = hardware_interface.set_servo_pwm(channel, pwm_value)
+            if success:
+                logger.info(f"Set channel {channel} to PWM {pwm_value}")
+                return "ACK\n"
+            else:
+                logger.error(f"Failed to set channel {channel} to PWM {pwm_value}")
+                return "NACK\n"
         else:
+            logger.error(f"Command format error: {command}")
             return "NACK\n"
-    else:
-        print(f"Command format error: {command}")
+    except Exception as e:
+        logger.exception(f"Error processing command: {e}")
         return "NACK\n"
 
 def main():
-    print("Connecting to drone...")
-    vehicle = connect(vehicle_connection_string, baud=vehicle_baud_rate, wait_ready=True)
-    print("Drone connected")
-
-    hardware_interface = HardwareInterface(vehicle)
-    sensor_handler = SensorHandler(vehicle)
-    telemetry_service = TelemetryService(vehicle)
-    telemetry_service.start()
-    print("Telemetry service started")
-
-    # Setup serial communication with the ground station
-    ser = serial.Serial(ground_station_serial_port, ground_station_baud_rate, timeout=1)
-    print(f"Listening for commands on {ground_station_serial_port}")
-
+    logger.info("Connecting to drone...")
     try:
+        vehicle = connect(vehicle_connection_string, baud=vehicle_baud_rate, wait_ready=True)
+        logger.info("Drone connected")
+
+        hardware_interface = HardwareInterface(vehicle)
+        sensor_handler = SensorHandler(vehicle)
+        telemetry_service = TelemetryService(vehicle)
+        telemetry_service.start()
+        logger.info("Telemetry service started")
+
+        ser = serial.Serial(ground_station_serial_port, ground_station_baud_rate, timeout=1)
+        logger.info(f"Listening for commands on {ground_station_serial_port}")
+
         while True:
             if ser.in_waiting > 0:
                 command = ser.readline().decode().strip()
                 ack = process_command(command, hardware_interface)
                 ser.write(ack.encode())
 
-            # Example telemetry update
             if time.time() % 5 < 1:
                 telemetry_data = telemetry_service.get_telemetry()
-                print(telemetry_data)
+                logger.info(f"Telemetry update: {telemetry_data}")
                 time.sleep(1)
 
     except KeyboardInterrupt:
-        print("Operation interrupted by user")
-
+        logger.info("Operation interrupted by user")
+    except Exception as e:
+        logger.exception(f"Unexpected error: {e}")
     finally:
-        print("Stopping telemetry service")
-        telemetry_service.stop()
-        telemetry_service.join()
-        ser.close()
-        print("Closing vehicle connection")
-        vehicle.close()
-        print("Shutdown complete")
+        logger.info("Shutting down")
+        if 'telemetry_service' in locals():
+            telemetry_service.stop()
+            telemetry_service.join()
+        if 'ser' in locals():
+            ser.close()
+        if 'vehicle' in locals():
+            vehicle.close()
+        logger.info("Shutdown complete")
 
 if __name__ == "__main__":
     main()
