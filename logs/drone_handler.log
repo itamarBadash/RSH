@@ -1,0 +1,78 @@
+2024-03-15 08:05:52,774 - drone_handler - INFO - Connecting to drone...
+2024-03-15 08:06:16,118 - drone_handler - INFO - Drone connected
+2024-03-15 08:06:16,120 - drone_handler - INFO - Telemetry service started
+2024-03-15 08:06:16,128 - drone_handler - INFO - Listening for commands on /dev/ttyUSB0
+2024-03-15 08:06:20,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -3.035, 'battery': <dronekit.Battery object at 0xffffac527b50>, 'velocity': [0.01, 0.0, 0.0], 'heading': 82}
+2024-03-15 08:06:25,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -3.095, 'battery': <dronekit.Battery object at 0xffffac508b10>, 'velocity': [-0.02, -0.05, 0.0], 'heading': 26}
+2024-03-15 08:06:30,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -3.106, 'battery': <dronekit.Battery object at 0xffffac4e5310>, 'velocity': [-0.03, -0.02, 0.0], 'heading': 330}
+2024-03-15 08:06:31,748 - drone_handler - INFO - Operation interrupted by user
+2024-03-15 08:06:31,748 - drone_handler - INFO - Shutting down
+2024-03-15 08:06:32,151 - drone_handler - INFO - Shutdown complete
+2024-03-15 08:09:19,211 - drone_handler - INFO - Connecting to drone...
+2024-03-15 08:09:43,355 - drone_handler - INFO - Drone connected
+2024-03-15 08:09:43,357 - drone_handler - INFO - Telemetry service started
+2024-03-15 08:09:43,367 - drone_handler - INFO - Listening for commands on /dev/ttyUSB0
+2024-03-15 08:09:45,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -3.435, 'battery': <dronekit.Battery object at 0xffff995f6b90>, 'velocity': [0.04, -0.04, 0.02], 'heading': 288}
+2024-03-15 08:09:50,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -3.396, 'battery': <dronekit.Battery object at 0xffff995f6dd0>, 'velocity': [-0.01, -0.07, 0.0], 'heading': 230}
+2024-03-15 08:09:51,006 - drone_handler - INFO - Set channel 1 to PWM 1543
+2024-03-15 08:09:51,204 - drone_handler - INFO - Set channel 1 to PWM 1599
+2024-03-15 08:09:51,429 - drone_handler - INFO - Set channel 1 to PWM 1662
+2024-03-15 08:09:51,652 - drone_handler - INFO - Set channel 1 to PWM 1726
+2024-03-15 08:09:51,892 - drone_handler - INFO - Set channel 1 to PWM 1789
+2024-03-15 08:09:52,116 - drone_handler - INFO - Set channel 1 to PWM 1849
+2024-03-15 08:09:52,356 - drone_handler - INFO - Set channel 1 to PWM 1912
+2024-03-15 08:09:52,580 - drone_handler - INFO - Set channel 2 to PWM 1496
+2024-03-15 08:09:52,820 - drone_handler - INFO - Set channel 2 to PWM 1464
+2024-03-15 08:09:52,933 - drone_handler - INFO - Set channel 1 to PWM 1964
+2024-03-15 08:09:53,156 - drone_handler - INFO - Set channel 2 to PWM 1460
+2024-03-15 08:09:53,396 - drone_handler - INFO - Set channel 1 to PWM 1992
+2024-03-15 08:09:53,620 - drone_handler - INFO - Set channel 1 to PWM 2000
+2024-03-15 08:09:53,860 - drone_handler - INFO - Set channel 2 to PWM 1492
+2024-03-15 08:09:54,084 - drone_handler - INFO - Set channel 2 to PWM 1496
+2024-03-15 08:09:54,324 - drone_handler - INFO - Set channel 1 to PWM 1944
+2024-03-15 08:09:54,547 - drone_handler - INFO - Set channel 1 to PWM 1884
+2024-03-15 08:09:54,771 - drone_handler - INFO - Set channel 1 to PWM 1821
+2024-03-15 08:09:55,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -3.457, 'battery': <dronekit.Battery object at 0xffff995a1a90>, 'velocity': [-0.06, -0.02, 0.01], 'heading': 172}
+2024-03-15 08:09:56,003 - drone_handler - INFO - Set channel 1 to PWM 1757
+2024-03-15 08:09:56,163 - drone_handler - INFO - Set channel 1 to PWM 1694
+2024-03-15 08:09:56,387 - drone_handler - INFO - Set channel 1 to PWM 1630
+2024-03-15 08:09:56,627 - drone_handler - INFO - Set channel 1 to PWM 1567
+2024-03-15 08:09:56,851 - drone_handler - INFO - Set channel 1 to PWM 1503
+2024-03-15 08:09:57,091 - drone_handler - INFO - Set channel 1 to PWM 1500
+2024-03-15 08:09:59,507 - drone_handler - INFO - Set channel 3 to PWM 1500
+2024-03-15 08:09:59,747 - drone_handler - INFO - Set channel 3 to PWM 1531
+2024-03-15 08:09:59,859 - drone_handler - INFO - Set channel 3 to PWM 1571
+2024-03-15 08:10:00,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -3.676, 'battery': <dronekit.Battery object at 0xffff995ff250>, 'velocity': [-0.02, 0.02, 0.01], 'heading': 115}
+2024-03-15 08:10:01,003 - drone_handler - INFO - Set channel 3 to PWM 1630
+2024-03-15 08:10:01,252 - drone_handler - INFO - Set channel 4 to PWM 1496
+2024-03-15 08:10:01,474 - drone_handler - INFO - Set channel 4 to PWM 1453
+2024-03-15 08:10:01,715 - drone_handler - INFO - Set channel 3 to PWM 1690
+2024-03-15 08:10:01,938 - drone_handler - INFO - Set channel 4 to PWM 1425
+2024-03-15 08:10:02,162 - drone_handler - INFO - Set channel 3 to PWM 1753
+2024-03-15 08:10:02,403 - drone_handler - INFO - Set channel 4 to PWM 1398
+2024-03-15 08:10:02,626 - drone_handler - INFO - Set channel 3 to PWM 1817
+2024-03-15 08:10:02,850 - drone_handler - INFO - Set channel 4 to PWM 1374
+2024-03-15 08:10:03,090 - drone_handler - INFO - Set channel 3 to PWM 1880
+2024-03-15 08:10:03,331 - drone_handler - INFO - Set channel 4 to PWM 1347
+2024-03-15 08:10:03,554 - drone_handler - INFO - Set channel 3 to PWM 1908
+2024-03-15 08:10:03,778 - drone_handler - INFO - Set channel 4 to PWM 1328
+2024-03-15 08:10:04,019 - drone_handler - INFO - Set channel 3 to PWM 1857
+2024-03-15 08:10:04,242 - drone_handler - INFO - Set channel 3 to PWM 1813
+2024-03-15 08:10:04,482 - drone_handler - INFO - Set channel 3 to PWM 1757
+2024-03-15 08:10:04,706 - drone_handler - INFO - Set channel 4 to PWM 1378
+2024-03-15 08:10:04,930 - drone_handler - INFO - Set channel 3 to PWM 1694
+2024-03-15 08:10:05,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -3.604, 'battery': <dronekit.Battery object at 0xffff9a7766d0>, 'velocity': [0.01, 0.02, 0.03], 'heading': 57}
+2024-03-15 08:10:06,003 - drone_handler - INFO - Set channel 4 to PWM 1406
+2024-03-15 08:10:06,210 - drone_handler - INFO - Set channel 3 to PWM 1630
+2024-03-15 08:10:06,435 - drone_handler - INFO - Set channel 4 to PWM 1433
+2024-03-15 08:10:06,658 - drone_handler - INFO - Set channel 3 to PWM 1567
+2024-03-15 08:10:06,786 - drone_handler - INFO - Set channel 4 to PWM 1457
+2024-03-15 08:10:07,010 - drone_handler - INFO - Set channel 3 to PWM 1503
+2024-03-15 08:10:07,250 - drone_handler - INFO - Set channel 4 to PWM 1484
+2024-03-15 08:10:07,474 - drone_handler - INFO - Set channel 3 to PWM 1468
+2024-03-15 08:10:07,714 - drone_handler - INFO - Set channel 4 to PWM 1500
+2024-03-15 08:10:07,938 - drone_handler - INFO - Set channel 3 to PWM 1500
+2024-03-15 08:10:10,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -3.347, 'battery': <dronekit.Battery object at 0xffff99606790>, 'velocity': [0.02, 0.0, 0.02], 'heading': 0}
+2024-03-15 08:10:10,901 - drone_handler - INFO - Operation interrupted by user
+2024-03-15 08:10:10,902 - drone_handler - INFO - Shutting down
+2024-03-15 08:10:11,399 - drone_handler - INFO - Shutdown complete
