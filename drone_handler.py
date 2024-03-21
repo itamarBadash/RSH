@@ -48,21 +48,27 @@ def connect_via_pymavlink(connection_string):
 def process_command(command, hardware_interface):
     try:
         match = re.match(r"Channel (\d+): PWM (\d+)", command)
-        if match:
-            channel, pwm_value = map(int, match.groups())
-            success = hardware_interface.set_servo_pwm(channel, pwm_value)
-            if success:
-                logger.info(f"Set channel {channel} to PWM {pwm_value}")
-                return "ACK\n"
-            else:
-                logger.error(f"Failed to set channel {channel} to PWM {pwm_value}")
-                return "NACK\n"
-        else:
-            logger.error(f"Command format error: {command}")
-            return "NACK\n"
-    except Exception as e:
-        logger.exception(f"Error processing command: {e}")
+        if not match:
+            raise ValueError("Invalid command format")
+
+        channel, pwm_value = map(int, match.groups())
+        if not (1 <= channel <= 16):
+            raise ValueError(f"Channel {channel} out of range. Must be 1-16.")
+        if not (1000 <= pwm_value <= 2000):
+            raise ValueError(f"PWM {pwm_value} out of range. Must be 1000-2000.")
+
+        success = hardware_interface.set_servo_pwm(channel, pwm_value)
+        if not success:
+            raise RuntimeError(f"Failed to set channel {channel} to PWM {pwm_value}")
+        logger.info(f"Set channel {channel} to PWM {pwm_value}")
+        return "ACK\n"
+    except ValueError as e:
+        logger.warning(f"Validation error for command '{command}': {e}")
         return "NACK\n"
+    except Exception as e:
+        logger.error(f"Unexpected error processing command '{command}': {e}")
+        return "NACK\n"
+
 
 def main():
     logger.info("Connecting to drone...")
