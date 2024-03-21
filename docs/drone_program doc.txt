@@ -1,0 +1,94 @@
+program responsible for the drone operations.
+modules:
+
+"""
+drone_handler.py: Main module for drone operation management.
+
+This module establishes a connection to the drone, processes serial commands from the ground station, and manages telemetry and hardware interface services.
+
+Functions:
+- wait_for_heartbeat(connection): Waits for a heartbeat from the drone to ensure connectivity.
+- connect_via_pymavlink(connection_string): Establishes a MAVLink connection to the drone using pymavlink.
+- process_command(command, hardware_interface): Parses and executes commands received via serial interface.
+- main(): Initializes the drone connection, starts telemetry services, and listens for commands.
+
+Variables:
+- logs_dir: Directory path for log files.
+- vehicle_connection_string: Serial connection string for the drone.
+- vehicle_baud_rate: Baud rate for the drone connection.
+- ground_station_serial_port: Serial port for ground station communication.
+- ground_station_baud_rate: Baud rate for ground station communication.
+
+Usage:
+Directly run this module to start the drone operation system. Make sure to configure the connection strings and baud rates as per your setup.
+"""
+
+
+"""
+hardware_interface.py: Provides an interface for direct drone hardware control.
+
+This module includes functions to change flight modes, take off, navigate to locations, and control camera and servo settings on the drone.
+
+Class:
+- HardwareInterface: Encapsulates the functionality for interacting directly with drone hardware.
+
+Methods:
+- set_flight_mode(mode_name): Sets the drone's flight mode.
+- takeoff(altitude): Initiates the drone's takeoff to a specified altitude.
+- goto_location(lat, lon, altitude): Commands the drone to go to a specified GPS location.
+- control_camera(tilt, pan): Adjusts the camera's tilt and pan (implementation details are assumed to be predefined).
+- set_servo_pwm(channel, pwm_value): Sets a specific servo channel to a PWM value.
+
+Variables:
+- logs_dir: Directory path for log files.
+
+Usage:
+This class is intended to be instantiated by other modules (e.g., drone_handler.py) that require direct control over drone hardware.
+"""
+
+"""
+telemetry_service.py: Manages periodic telemetry data collection from the drone.
+
+This module defines a service that runs in a separate thread to continuously update telemetry data, including location, altitude, battery status, and more.
+
+Class:
+- TelemetryService: A thread that periodically fetches and stores telemetry data from the drone.
+
+Methods:
+- run(): The entry point for the thread, which continuously updates telemetry data.
+- update_telemetry(): Fetches the latest telemetry data from the drone.
+- get_telemetry(): Returns the latest telemetry data.
+- stop(): Signals the thread to stop running.
+
+Variables:
+- logs_dir: Directory path for log files.
+- update_interval: Interval in seconds between telemetry updates.
+
+Usage:
+Instantiate and start the TelemetryService thread from the main drone operation module to continuously monitor drone telemetry.
+"""
+
+
+"""
+sensor_handling.py: Abstracts the retrieval of sensor data from the drone.
+
+Provides a convenient interface for accessing various drone sensor data, including GPS location, altitude, battery status, velocity, and heading.
+
+Class:
+- SensorHandler: Facilitates the fetching of sensor data from the drone.
+
+Methods:
+- get_location(): Returns the current GPS location of the drone.
+- get_altitude(): Returns the current altitude of the drone.
+- get_battery_status(): Returns the current battery status of the drone.
+- get_velocity(): Returns the current velocity of the drone.
+- get_heading(): Returns the current heading of the drone.
+- collect_all_data(): Collects all available sensor data at once.
+
+Variables:
+- logs_dir: Directory path for log files.
+
+Usage:
+This class is designed to be utilized by telemetry services or other components that require access to the drone's real-time sensor data.
+"""
+

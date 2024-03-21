@@ -76,3 +76,13 @@
 2024-03-15 08:10:10,901 - drone_handler - INFO - Operation interrupted by user
 2024-03-15 08:10:10,902 - drone_handler - INFO - Shutting down
 2024-03-15 08:10:11,399 - drone_handler - INFO - Shutdown complete
+2024-03-15 08:58:43,231 - drone_handler - INFO - Connecting to drone...
+2024-03-15 08:59:07,077 - drone_handler - INFO - Drone connected
+2024-03-15 08:59:07,079 - drone_handler - INFO - Telemetry service started
+2024-03-15 08:59:07,088 - drone_handler - INFO - Listening for commands on /dev/ttyUSB0
+2024-03-15 08:59:10,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': 0.095, 'battery': <dronekit.Battery object at 0xffffb50a3750>, 'velocity': [-0.13, 0.01, 0.11], 'heading': 19}
+2024-03-15 08:59:15,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': 0.002, 'battery': <dronekit.Battery object at 0xffffb509a750>, 'velocity': [-0.11, 0.02, 0.16], 'heading': 20}
+2024-03-15 08:59:20,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': 0.002, 'battery': <dronekit.Battery object at 0xffffb509a4d0>, 'velocity': [-0.12, 0.03, 0.17], 'heading': 21}
+2024-03-15 08:59:20,630 - drone_handler - INFO - Operation interrupted by user
+2024-03-15 08:59:20,631 - drone_handler - INFO - Shutting down
+2024-03-15 08:59:21,117 - drone_handler - INFO - Shutdown complete
