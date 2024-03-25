@@ -86,3 +86,364 @@
 2024-03-15 08:59:20,630 - drone_handler - INFO - Operation interrupted by user
 2024-03-15 08:59:20,631 - drone_handler - INFO - Shutting down
 2024-03-15 08:59:21,117 - drone_handler - INFO - Shutdown complete
+2024-03-15 11:58:50,430 - drone_handler - INFO - Connecting to drone...
+2024-03-15 11:59:14,677 - drone_handler - INFO - Drone connected
+2024-03-15 11:59:14,679 - drone_handler - INFO - Telemetry service started
+2024-03-15 11:59:14,687 - drone_handler - INFO - Listening for commands on /dev/ttyUSB0
+2024-03-15 11:59:15,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': 16.126, 'battery': <dronekit.Battery object at 0xffffb287f8d0>, 'velocity': [0.02, -0.04, 0.55], 'heading': 350}
+2024-03-15 11:59:20,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': 15.86, 'battery': <dronekit.Battery object at 0xffffb2890210>, 'velocity': [-0.03, 0.0, 0.56], 'heading': 210}
+2024-03-15 11:59:21,673 - drone_handler - INFO - Operation interrupted by user
+2024-03-15 11:59:21,673 - drone_handler - INFO - Shutting down
+2024-03-15 11:59:21,714 - drone_handler - INFO - Shutdown complete
+2024-03-15 12:54:13,942 - drone_handler - INFO - Connecting to drone...
+2024-03-15 12:54:37,688 - drone_handler - INFO - Drone connected
+2024-03-15 12:54:37,691 - drone_handler - INFO - Telemetry service started
+2024-03-15 12:54:37,704 - drone_handler - INFO - Listening for commands on /dev/ttyUSB0
+2024-03-15 12:54:40,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': 20.985, 'battery': <dronekit.Battery object at 0xffffa04bfbd0>, 'velocity': [0.03, -0.09, 1.12], 'heading': 43}
+2024-03-15 12:54:45,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': 20.971, 'battery': <dronekit.Battery object at 0xffffa169b650>, 'velocity': [-0.08, 0.04, 1.1], 'heading': 255}
+2024-03-15 12:54:50,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': 20.93, 'battery': <dronekit.Battery object at 0xffffa04f6d50>, 'velocity': [0.09, -0.01, 1.11], 'heading': 108}
+2024-03-15 12:54:55,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': 20.982, 'battery': <dronekit.Battery object at 0xffffa0501f10>, 'velocity': [-0.08, -0.06, 1.1], 'heading': 321}
+2024-03-15 12:55:00,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': 20.791, 'battery': <dronekit.Battery object at 0xffffa04e7350>, 'velocity': [0.02, 0.07, 1.1], 'heading': 173}
+2024-03-15 12:55:00,787 - drone_handler - INFO - Operation interrupted by user
+2024-03-15 12:55:00,787 - drone_handler - INFO - Shutting down
+2024-03-15 12:55:01,703 - drone_handler - INFO - Shutdown complete
+2024-03-15 15:01:20,966 - drone_handler - INFO - Connecting to drone...
+2024-03-15 15:01:45,012 - drone_handler - INFO - Drone connected
+2024-03-15 15:01:45,014 - drone_handler - INFO - Telemetry service started
+2024-03-15 15:01:45,024 - drone_handler - INFO - Listening for commands on /dev/ttyUSB0
+2024-03-15 15:01:45,024 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': 0.587, 'battery': <dronekit.Battery object at 0xffffbb583bd0>, 'velocity': [0.0, 0.0, -0.08], 'heading': 182}
+2024-03-15 15:01:50,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': 0.418, 'battery': <dronekit.Battery object at 0xffffbb59dcd0>, 'velocity': [0.0, 0.0, -0.1], 'heading': 182}
+2024-03-15 15:01:55,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': 0.336, 'battery': <dronekit.Battery object at 0xffffbb59e410>, 'velocity': [0.0, 0.0, -0.11], 'heading': 182}
+2024-03-15 15:01:56,134 - drone_handler - INFO - Set channel 1 to PWM 1500
+2024-03-15 15:01:56,259 - drone_handler - INFO - Set channel 1 to PWM 1511
+2024-03-15 15:01:56,482 - drone_handler - INFO - Set channel 1 to PWM 1539
+2024-03-15 15:01:56,722 - drone_handler - INFO - Set channel 1 to PWM 1575
+2024-03-15 15:01:56,949 - drone_handler - INFO - Set channel 1 to PWM 1623
+2024-03-15 15:01:57,170 - drone_handler - INFO - Set channel 1 to PWM 1678
+2024-03-15 15:01:57,410 - drone_handler - INFO - Set channel 1 to PWM 1742
+2024-03-15 15:01:57,634 - drone_handler - INFO - Set channel 2 to PWM 1496
+2024-03-15 15:01:57,874 - drone_handler - INFO - Set channel 2 to PWM 1527
+2024-03-15 15:01:58,098 - drone_handler - INFO - Set channel 1 to PWM 1805
+2024-03-15 15:01:58,338 - drone_handler - INFO - Set channel 2 to PWM 1563
+2024-03-15 15:01:58,562 - drone_handler - INFO - Set channel 1 to PWM 1865
+2024-03-15 15:01:58,802 - drone_handler - INFO - Set channel 1 to PWM 1912
+2024-03-15 15:01:59,026 - drone_handler - INFO - Set channel 1 to PWM 1948
+2024-03-15 15:01:59,250 - drone_handler - INFO - Set channel 1 to PWM 1976
+2024-03-15 15:01:59,490 - drone_handler - INFO - Set channel 1 to PWM 1992
+2024-03-15 15:01:59,714 - drone_handler - INFO - Set channel 1 to PWM 2000
+2024-03-15 15:01:59,954 - drone_handler - INFO - Set channel 2 to PWM 1531
+2024-03-15 15:02:00,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': 0.638, 'battery': <dronekit.Battery object at 0xffffbb583a50>, 'velocity': [0.0, -0.01, -0.11], 'heading': 183}
+2024-03-15 15:02:01,003 - drone_handler - INFO - Set channel 2 to PWM 1496
+2024-03-15 15:02:01,218 - drone_handler - INFO - Set channel 1 to PWM 1920
+2024-03-15 15:02:01,442 - drone_handler - INFO - Set channel 1 to PWM 1857
+2024-03-15 15:02:01,682 - drone_handler - INFO - Set channel 1 to PWM 1793
+2024-03-15 15:02:01,906 - drone_handler - INFO - Set channel 1 to PWM 1730
+2024-03-15 15:02:02,130 - drone_handler - INFO - Set channel 1 to PWM 1666
+2024-03-15 15:02:02,370 - drone_handler - INFO - Set channel 1 to PWM 1603
+2024-03-15 15:02:02,594 - drone_handler - INFO - Set channel 1 to PWM 1547
+2024-03-15 15:02:02,723 - drone_handler - INFO - Set channel 1 to PWM 1503
+2024-03-15 15:02:02,947 - drone_handler - INFO - Set channel 1 to PWM 1500
+2024-03-15 15:02:03,186 - drone_handler - INFO - Set channel 4 to PWM 1519
+2024-03-15 15:02:03,409 - drone_handler - INFO - Set channel 4 to PWM 1492
+2024-03-15 15:02:03,633 - drone_handler - INFO - Set channel 3 to PWM 1507
+2024-03-15 15:02:03,873 - drone_handler - INFO - Set channel 3 to PWM 1547
+2024-03-15 15:02:04,097 - drone_handler - INFO - Set channel 4 to PWM 1468
+2024-03-15 15:02:04,339 - drone_handler - INFO - Set channel 3 to PWM 1611
+2024-03-15 15:02:04,561 - drone_handler - INFO - Set channel 4 to PWM 1433
+2024-03-15 15:02:04,785 - drone_handler - INFO - Set channel 3 to PWM 1670
+2024-03-15 15:02:05,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': 0.672, 'battery': <dronekit.Battery object at 0xffffbb564550>, 'velocity': [0.0, 0.0, -0.12], 'heading': 183}
+2024-03-15 15:02:06,003 - drone_handler - INFO - Set channel 4 to PWM 1398
+2024-03-15 15:02:06,177 - drone_handler - INFO - Set channel 3 to PWM 1734
+2024-03-15 15:02:06,401 - drone_handler - INFO - Set channel 4 to PWM 1367
+2024-03-15 15:02:06,641 - drone_handler - INFO - Set channel 3 to PWM 1797
+2024-03-15 15:02:06,865 - drone_handler - INFO - Set channel 4 to PWM 1332
+2024-03-15 15:02:07,105 - drone_handler - INFO - Set channel 3 to PWM 1861
+2024-03-15 15:02:07,329 - drone_handler - INFO - Set channel 4 to PWM 1296
+2024-03-15 15:02:07,569 - drone_handler - INFO - Set channel 3 to PWM 1924
+2024-03-15 15:02:07,793 - drone_handler - INFO - Set channel 4 to PWM 1265
+2024-03-15 15:02:08,034 - drone_handler - INFO - Set channel 3 to PWM 1972
+2024-03-15 15:02:08,257 - drone_handler - INFO - Set channel 4 to PWM 1234
+2024-03-15 15:02:08,497 - drone_handler - INFO - Set channel 3 to PWM 1996
+2024-03-15 15:02:08,721 - drone_handler - INFO - Set channel 4 to PWM 1222
+2024-03-15 15:02:08,945 - drone_handler - INFO - Set channel 4 to PWM 1218
+2024-03-15 15:02:09,184 - drone_handler - INFO - Set channel 4 to PWM 1214
+2024-03-15 15:02:09,409 - drone_handler - INFO - Set channel 3 to PWM 1908
+2024-03-15 15:02:09,650 - drone_handler - INFO - Set channel 4 to PWM 1265
+2024-03-15 15:02:09,872 - drone_handler - INFO - Set channel 3 to PWM 1845
+2024-03-15 15:02:10,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': 0.251, 'battery': <dronekit.Battery object at 0xffffbc704610>, 'velocity': [0.0, 0.0, -0.13], 'heading': 183}
+2024-03-15 15:02:11,003 - drone_handler - INFO - Set channel 4 to PWM 1296
+2024-03-15 15:02:11,136 - drone_handler - INFO - Set channel 3 to PWM 1781
+2024-03-15 15:02:11,360 - drone_handler - INFO - Set channel 4 to PWM 1332
+2024-03-15 15:02:11,600 - drone_handler - INFO - Set channel 3 to PWM 1718
+2024-03-15 15:02:11,824 - drone_handler - INFO - Set channel 4 to PWM 1371
+2024-03-15 15:02:12,064 - drone_handler - INFO - Set channel 3 to PWM 1654
+2024-03-15 15:02:12,288 - drone_handler - INFO - Set channel 4 to PWM 1406
+2024-03-15 15:02:12,417 - drone_handler - INFO - Set channel 3 to PWM 1595
+2024-03-15 15:02:12,640 - drone_handler - INFO - Set channel 4 to PWM 1441
+2024-03-15 15:02:12,864 - drone_handler - INFO - Set channel 3 to PWM 1535
+2024-03-15 15:02:13,104 - drone_handler - INFO - Set channel 4 to PWM 1480
+2024-03-15 15:02:13,328 - drone_handler - INFO - Set channel 3 to PWM 1500
+2024-03-15 15:02:13,568 - drone_handler - INFO - Set channel 4 to PWM 1500
+2024-03-15 15:02:13,792 - drone_handler - INFO - Set channel 3 to PWM 1535
+2024-03-15 15:02:14,031 - drone_handler - INFO - Set channel 3 to PWM 1587
+2024-03-15 15:02:14,068 - drone_handler - INFO - Operation interrupted by user
+2024-03-15 15:02:14,068 - drone_handler - INFO - Shutting down
+2024-03-15 15:02:15,056 - drone_handler - INFO - Shutdown complete
+2024-03-25 08:00:48,747 - drone_handler - INFO - Connecting to drone...
+2024-03-25 08:00:48,765 - drone_handler - ERROR - Unexpected error: [Errno 2] could not open port /dev/serial0: [Errno 2] No such file or directory: '/dev/serial0'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/drone_handler.py", line 76, in main
+    vehicle = connect(vehicle_connection_string, baud=vehicle_baud_rate, wait_ready=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/dronekit/__init__.py", line 3159, in connect
+    handler = MAVConnection(ip, baud=baud, source_system=source_system, source_component=source_component, use_native=use_native)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/dronekit/mavlink.py", line 130, in __init__
+    self.master = mavutil.mavlink_connection(ip, baud=baud, source_system=source_system, source_component=source_component)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pymavlink/mavutil.py", line 1823, in mavlink_connection
+    return mavserial(device,
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pymavlink/mavutil.py", line 971, in __init__
+    raise e
+  File "/usr/local/lib/python3.11/site-packages/pymavlink/mavutil.py", line 967, in __init__
+    self.port = serial.Serial(self.device, 1200, timeout=0,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial0: [Errno 2] No such file or directory: '/dev/serial0'
+2024-03-25 08:00:48,787 - drone_handler - INFO - Shutting down
+2024-03-25 08:00:48,787 - drone_handler - INFO - Shutdown complete
+2024-03-25 08:05:29,503 - drone_handler - INFO - Connecting to drone...
+2024-03-25 08:05:29,508 - drone_handler - ERROR - Unexpected error: [Errno 2] could not open port /dev/serial0: [Errno 2] No such file or directory: '/dev/serial0'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/drone_handler.py", line 76, in main
+    vehicle = connect(vehicle_connection_string, baud=vehicle_baud_rate, wait_ready=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/dronekit/__init__.py", line 3159, in connect
+    handler = MAVConnection(ip, baud=baud, source_system=source_system, source_component=source_component, use_native=use_native)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/dronekit/mavlink.py", line 130, in __init__
+    self.master = mavutil.mavlink_connection(ip, baud=baud, source_system=source_system, source_component=source_component)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pymavlink/mavutil.py", line 1823, in mavlink_connection
+    return mavserial(device,
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pymavlink/mavutil.py", line 971, in __init__
+    raise e
+  File "/usr/local/lib/python3.11/site-packages/pymavlink/mavutil.py", line 967, in __init__
+    self.port = serial.Serial(self.device, 1200, timeout=0,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial0: [Errno 2] No such file or directory: '/dev/serial0'
+2024-03-25 08:05:29,516 - drone_handler - INFO - Shutting down
+2024-03-25 08:05:29,517 - drone_handler - INFO - Shutdown complete
+2024-03-25 08:11:53,508 - drone_handler - INFO - Connecting to drone...
+2024-03-25 08:11:53,513 - drone_handler - ERROR - Unexpected error: [Errno 2] could not open port /dev/serial0: [Errno 2] No such file or directory: '/dev/serial0'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/drone_handler.py", line 76, in main
+    vehicle = connect(vehicle_connection_string, baud=vehicle_baud_rate, wait_ready=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/dronekit/__init__.py", line 3159, in connect
+    handler = MAVConnection(ip, baud=baud, source_system=source_system, source_component=source_component, use_native=use_native)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/dronekit/mavlink.py", line 130, in __init__
+    self.master = mavutil.mavlink_connection(ip, baud=baud, source_system=source_system, source_component=source_component)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pymavlink/mavutil.py", line 1823, in mavlink_connection
+    return mavserial(device,
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pymavlink/mavutil.py", line 971, in __init__
+    raise e
+  File "/usr/local/lib/python3.11/site-packages/pymavlink/mavutil.py", line 967, in __init__
+    self.port = serial.Serial(self.device, 1200, timeout=0,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial0: [Errno 2] No such file or directory: '/dev/serial0'
+2024-03-25 08:11:53,521 - drone_handler - INFO - Shutting down
+2024-03-25 08:11:53,522 - drone_handler - INFO - Shutdown complete
+2024-03-25 08:18:22,693 - drone_handler - INFO - Connecting to drone...
+2024-03-25 08:18:42,771 - drone_handler - INFO - Operation interrupted by user
+2024-03-25 08:18:42,772 - drone_handler - INFO - Shutting down
+2024-03-25 08:18:42,772 - drone_handler - INFO - Shutdown complete
+2024-03-25 08:51:18,594 - drone_handler - INFO - Connecting to drone...
+2024-03-25 08:51:18,602 - drone_handler - ERROR - Unexpected error: [Errno 2] could not open port /dev/serial0: [Errno 2] No such file or directory: '/dev/serial0'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/drone_handler.py", line 76, in main
+    vehicle = connect(vehicle_connection_string, baud=vehicle_baud_rate, wait_ready=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/dronekit/__init__.py", line 3159, in connect
+    handler = MAVConnection(ip, baud=baud, source_system=source_system, source_component=source_component, use_native=use_native)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/dronekit/mavlink.py", line 130, in __init__
+    self.master = mavutil.mavlink_connection(ip, baud=baud, source_system=source_system, source_component=source_component)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pymavlink/mavutil.py", line 1823, in mavlink_connection
+    return mavserial(device,
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pymavlink/mavutil.py", line 971, in __init__
+    raise e
+  File "/usr/local/lib/python3.11/site-packages/pymavlink/mavutil.py", line 967, in __init__
+    self.port = serial.Serial(self.device, 1200, timeout=0,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial0: [Errno 2] No such file or directory: '/dev/serial0'
+2024-03-25 08:51:18,612 - drone_handler - INFO - Shutting down
+2024-03-25 08:51:18,612 - drone_handler - INFO - Shutdown complete
+2024-03-25 08:54:12,250 - drone_handler - INFO - Connecting to drone...
+2024-03-25 08:54:12,256 - drone_handler - ERROR - Unexpected error: [Errno 2] could not open port /dev/serial0: [Errno 2] No such file or directory: '/dev/serial0'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/drone_handler.py", line 76, in main
+    vehicle = connect(vehicle_connection_string, baud=vehicle_baud_rate, wait_ready=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/dronekit/__init__.py", line 3159, in connect
+    handler = MAVConnection(ip, baud=baud, source_system=source_system, source_component=source_component, use_native=use_native)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/dronekit/mavlink.py", line 130, in __init__
+    self.master = mavutil.mavlink_connection(ip, baud=baud, source_system=source_system, source_component=source_component)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pymavlink/mavutil.py", line 1823, in mavlink_connection
+    return mavserial(device,
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/pymavlink/mavutil.py", line 971, in __init__
+    raise e
+  File "/usr/local/lib/python3.11/site-packages/pymavlink/mavutil.py", line 967, in __init__
+    self.port = serial.Serial(self.device, 1200, timeout=0,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/serialutil.py", line 244, in __init__
+    self.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial0: [Errno 2] No such file or directory: '/dev/serial0'
+2024-03-25 08:54:12,264 - drone_handler - INFO - Shutting down
+2024-03-25 08:54:12,264 - drone_handler - INFO - Shutdown complete
+2024-03-25 09:08:44,979 - drone_handler - INFO - Connecting to drone...
+2024-03-25 09:09:09,621 - drone_handler - INFO - Drone connected
+2024-03-25 09:09:09,624 - drone_handler - INFO - Telemetry service started
+2024-03-25 09:09:09,634 - drone_handler - INFO - Listening for commands on /dev/ttyUSB0
+2024-03-25 09:09:10,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -7.759, 'battery': <dronekit.Battery object at 0xffffa033e290>, 'velocity': [0.0, 0.0, 0.0], 'heading': 311}
+2024-03-25 09:09:12,430 - drone_handler - INFO - Operation interrupted by user
+2024-03-25 09:09:12,431 - drone_handler - INFO - Shutting down
+2024-03-25 09:09:12,655 - drone_handler - INFO - Shutdown complete
+2024-03-25 09:11:17,609 - drone_handler - INFO - Connecting to drone...
+2024-03-25 09:11:41,354 - drone_handler - INFO - Drone connected
+2024-03-25 09:11:41,359 - drone_handler - INFO - Telemetry service started
+2024-03-25 09:11:41,368 - drone_handler - INFO - Listening for commands on /dev/ttyUSB0
+2024-03-25 09:11:45,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -8.194, 'battery': <dronekit.Battery object at 0xffff84105ad0>, 'velocity': [0.0, 0.0, 0.04], 'heading': 319}
+2024-03-25 09:11:50,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -7.776, 'battery': <dronekit.Battery object at 0xffff840fc150>, 'velocity': [0.0, 0.0, -0.01], 'heading': 320}
+2024-03-25 09:11:55,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -7.702, 'battery': <dronekit.Battery object at 0xffff84105790>, 'velocity': [0.0, 0.0, -0.03], 'heading': 320}
+2024-03-25 09:12:00,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -7.951, 'battery': <dronekit.Battery object at 0xffff8411b250>, 'velocity': [0.0, 0.0, -0.01], 'heading': 320}
+2024-03-25 09:12:05,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -7.793, 'battery': <dronekit.Battery object at 0xffff84126cd0>, 'velocity': [0.0, 0.0, 0.0], 'heading': 320}
+2024-03-25 09:12:10,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -7.646, 'battery': <dronekit.Battery object at 0xffff84105910>, 'velocity': [0.0, 0.0, -0.02], 'heading': 321}
+2024-03-25 09:12:15,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -7.685, 'battery': <dronekit.Battery object at 0xffff8410c510>, 'velocity': [0.0, 0.0, 0.0], 'heading': 321}
+2024-03-25 09:12:20,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -7.674, 'battery': <dronekit.Battery object at 0xffff840fc310>, 'velocity': [0.0, 0.01, 0.01], 'heading': 321}
+2024-03-25 09:12:25,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -8.058, 'battery': <dronekit.Battery object at 0xffff84126b50>, 'velocity': [0.0, 0.0, 0.04], 'heading': 321}
+2024-03-25 09:12:30,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -8.138, 'battery': <dronekit.Battery object at 0xffff8412df10>, 'velocity': [0.0, 0.0, 0.03], 'heading': 322}
+2024-03-25 09:12:35,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -7.787, 'battery': <dronekit.Battery object at 0xffff840eba10>, 'velocity': [0.0, 0.0, 0.0], 'heading': 322}
+2024-03-25 09:12:40,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -7.736, 'battery': <dronekit.Battery object at 0xffff8412e250>, 'velocity': [0.0, 0.0, -0.05], 'heading': 322}
+2024-03-25 09:12:45,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -7.81, 'battery': <dronekit.Battery object at 0xffff8412df90>, 'velocity': [0.0, 0.0, -0.01], 'heading': 323}
+2024-03-25 09:12:50,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -7.748, 'battery': <dronekit.Battery object at 0xffff84126c90>, 'velocity': [-0.01, 0.0, 0.01], 'heading': 323}
+2024-03-25 09:12:55,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -7.94, 'battery': <dronekit.Battery object at 0xffff8411b250>, 'velocity': [0.0, 0.0, 0.02], 'heading': 323}
+2024-03-25 09:13:00,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -7.968, 'battery': <dronekit.Battery object at 0xffff8410f090>, 'velocity': [0.0, 0.0, 0.01], 'heading': 323}
+2024-03-25 09:13:05,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -7.787, 'battery': <dronekit.Battery object at 0xffff8410ee10>, 'velocity': [0.0, 0.0, 0.0], 'heading': 324}
+2024-03-25 09:13:10,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -8.081, 'battery': <dronekit.Battery object at 0xffff840fc390>, 'velocity': [0.0, 0.0, 0.0], 'heading': 324}
+2024-03-25 09:13:15,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -7.589, 'battery': <dronekit.Battery object at 0xffff840eb4d0>, 'velocity': [0.0, 0.0, 0.0], 'heading': 324}
+2024-03-25 09:13:20,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -7.923, 'battery': <dronekit.Battery object at 0xffff840d90d0>, 'velocity': [0.0, 0.0, -0.01], 'heading': 324}
+2024-03-25 09:13:25,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -7.855, 'battery': <dronekit.Battery object at 0xffff8410c850>, 'velocity': [0.0, 0.0, -0.01], 'heading': 325}
+2024-03-25 09:13:30,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -7.838, 'battery': <dronekit.Battery object at 0xffff840fc150>, 'velocity': [0.0, 0.0, 0.0], 'heading': 325}
+2024-03-25 09:13:35,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -7.736, 'battery': <dronekit.Battery object at 0xffff8411b210>, 'velocity': [0.0, 0.0, 0.0], 'heading': 325}
+2024-03-25 09:13:40,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -7.782, 'battery': <dronekit.Battery object at 0xffff840cbe10>, 'velocity': [0.0, 0.0, 0.0], 'heading': 325}
+2024-03-25 09:13:45,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -7.985, 'battery': <dronekit.Battery object at 0xffff84126c90>, 'velocity': [0.0, 0.0, 0.01], 'heading': 326}
+2024-03-25 09:13:50,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -8.019, 'battery': <dronekit.Battery object at 0xffff84105bd0>, 'velocity': [0.0, 0.0, 0.0], 'heading': 326}
+2024-03-25 09:13:55,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -7.934, 'battery': <dronekit.Battery object at 0xffff84105ad0>, 'velocity': [0.01, 0.0, 0.0], 'heading': 326}
+2024-03-25 09:14:00,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -7.962, 'battery': <dronekit.Battery object at 0xffff852f0f10>, 'velocity': [0.0, 0.0, 0.0], 'heading': 326}
+2024-03-25 09:14:05,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -7.883, 'battery': <dronekit.Battery object at 0xffff840fc350>, 'velocity': [0.01, 0.0, 0.0], 'heading': 327}
+2024-03-25 18:03:35,679 - drone_handler - INFO - Connecting to drone...
+2024-03-25 18:03:59,537 - drone_handler - INFO - Drone connected
+2024-03-25 18:03:59,540 - drone_handler - INFO - Telemetry service started
+2024-03-25 18:03:59,550 - drone_handler - INFO - Listening for commands on /dev/ttyUSB0
+2024-03-25 18:04:00,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -7.787, 'battery': <dronekit.Battery object at 0xffff7d4e25d0>, 'velocity': [-0.03, 0.02, -0.02], 'heading': 102}
+2024-03-25 18:04:05,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -8.019, 'battery': <dronekit.Battery object at 0xffff7d4e2650>, 'velocity': [-0.02, -0.01, -0.01], 'heading': 105}
+2024-03-25 18:04:10,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -7.951, 'battery': <dronekit.Battery object at 0xffff7d4f1810>, 'velocity': [-0.02, 0.03, 0.0], 'heading': 108}
+2024-03-25 18:04:15,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -7.934, 'battery': <dronekit.Battery object at 0xffff7d4dd310>, 'velocity': [0.04, 0.0, 0.0], 'heading': 111}
+2024-03-25 18:04:15,135 - drone_handler - INFO - Operation interrupted by user
+2024-03-25 18:04:15,135 - drone_handler - INFO - Shutting down
+2024-03-25 18:04:15,578 - drone_handler - INFO - Shutdown complete
+2024-03-25 18:24:15,372 - drone_handler - INFO - Connecting to drone...
+2024-03-25 18:24:39,420 - drone_handler - INFO - Drone connected
+2024-03-25 18:24:39,422 - drone_handler - INFO - Telemetry service started
+2024-03-25 18:24:39,433 - drone_handler - INFO - Listening for commands on /dev/ttyUSB0
+2024-03-25 18:24:40,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -7.29, 'battery': <dronekit.Battery object at 0xffffb1712e10>, 'velocity': [0.0, -0.02, -0.04], 'heading': 117}
+2024-03-25 18:24:43,246 - drone_handler - INFO - Operation interrupted by user
+2024-03-25 18:24:43,247 - drone_handler - INFO - Shutting down
+2024-03-25 18:24:43,433 - drone_handler - INFO - Shutdown complete
+2024-03-25 20:29:57,223 - drone_handler - INFO - Connecting to drone...
+2024-03-25 20:30:21,279 - drone_handler - INFO - Drone connected
+2024-03-25 20:30:21,280 - drone_handler - INFO - Telemetry service started
+2024-03-25 20:30:21,289 - drone_handler - INFO - Listening for commands on /dev/ttyUSB0
+2024-03-25 20:30:25,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': 0.04, 'battery': <dronekit.Battery object at 0xffff8e1a1fd0>, 'velocity': [-0.04, -0.02, 0.01], 'heading': 45}
+2024-03-25 20:30:30,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -0.174, 'battery': <dronekit.Battery object at 0xffff8e187890>, 'velocity': [-0.05, -0.01, 0.0], 'heading': 46}
+2024-03-25 20:30:35,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': 0.062, 'battery': <dronekit.Battery object at 0xffff8e119590>, 'velocity': [-0.04, 0.0, 0.0], 'heading': 47}
+2024-03-25 20:30:40,000 - drone_handler - INFO - Telemetry update: {'location': {'latitude': 0.0, 'longitude': 0.0}, 'altitude': -0.201, 'battery': <dronekit.Battery object at 0xffff8e19d250>, 'velocity': [-0.04, -0.02, 0.0], 'heading': 48}
+2024-03-25 20:30:44,733 - drone_handler - INFO - Operation interrupted by user
+2024-03-25 20:30:44,733 - drone_handler - INFO - Shutting down
+2024-03-25 20:30:45,321 - drone_handler - INFO - Shutdown complete
+2024-03-25 20:36:24,556 - drone_handler - INFO - Connecting to drone...
+2024-03-25 20:36:32,855 - drone_handler - INFO - Operation interrupted by user
+2024-03-25 20:36:32,856 - drone_handler - INFO - Shutting down
+2024-03-25 20:36:32,856 - drone_handler - INFO - Shutdown complete
+2024-03-25 20:38:27,477 - drone_handler - INFO - Connecting to drone...
+2024-03-25 20:38:32,757 - drone_handler - INFO - Operation interrupted by user
+2024-03-25 20:38:32,757 - drone_handler - INFO - Shutting down
+2024-03-25 20:38:32,758 - drone_handler - INFO - Shutdown complete

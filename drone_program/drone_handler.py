@@ -3,7 +3,9 @@ import serial
 import time
 import re
 import sys
+import os
 from pymavlink import mavutil
+import configparser
 
 
 if sys.version_info.major == 3 and sys.version_info.minor >= 10:
@@ -16,26 +18,30 @@ from hardware_interface import HardwareInterface
 from telemetry_service import TelemetryService
 from sensor_handling import SensorHandler
 
-# Setup basic logging
-logs_dir = '/mnt/itamarusb/RSH/logs'
+config = configparser.ConfigParser()
 
-# Setup basic logging
+config_path = os.path.join(os.path.dirname(__file__), 'config.ini')
+config.read(config_path)
+
+logs_dir = config['General']['LogsDir']
+vehicle_connection_string = config['Connection']['VehicleConnectionString']
+vehicle_baud_rate = int(config['Connection']['VehicleBaudRate'])
+ground_station_serial_port = config['Connection']['GroundStationSerialPort']
+ground_station_baud_rate = int(config['Connection']['GroundStationBaudRate'])
+
 logger = logging.getLogger('drone_handler')
 handler = logging.FileHandler(f'{logs_dir}/drone_handler.log')
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 handler.setFormatter(formatter)
 logger.setLevel(logging.INFO)
 logger.addHandler(handler)
-# Connection parameters
-vehicle_connection_string = '/dev/serial0'
-vehicle_baud_rate = 921600
-ground_station_serial_port = '/dev/ttyUSB0'
-ground_station_baud_rate = 57600
+
 
 def wait_for_heartbeat(connection):
     logger.info("Waiting for heartbeat from vehicle")
     connection.wait_heartbeat()
     logger.info("Heartbeat from vehicle received")
+
 
 def connect_via_pymavlink(connection_string):
     logger.info(f"Connecting to drone via {connection_string} with baud rate {vehicle_baud_rate}")
@@ -44,6 +50,7 @@ def connect_via_pymavlink(connection_string):
         baud=vehicle_baud_rate
     )
     return mavlink_connection
+
 
 def process_command(command, hardware_interface):
     try:
@@ -110,6 +117,7 @@ def main():
         if 'vehicle' in locals():
             vehicle.close()
         logger.info("Shutdown complete")
+
 
 if __name__ == "__main__":
     main()
